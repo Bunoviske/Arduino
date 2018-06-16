@@ -1,5 +1,6 @@
 #include <avr/pgmspace.h>
 #include <SoftwareSerial.h>
+#include <Wire.h>
 
 /*
    LINK PARA INSTALACAO DA BIBLIOTECA
@@ -110,7 +111,7 @@ uint16_t ultima_pos = 0; //variavel que auxilia o controle dos trechos de cada p
 uint8_t estado;
 
 //char buffer[] = "4:100:60:20:30/20:30|10:40/10:40>120"; //4:10:6:2:3/3:2|1:4/4:1>12
-char buffer[1024];
+char buffer[800];
 
 int contGlobal = 0;
 

@@ -16,7 +16,7 @@ bool power[MaxRaias];//se for 1, quer dizer que a raia está ligada. se for 0, d
 
 uint8_t readPins[MaxRaias]; //opcao sem mux, ou seja, um pino digital para cada digitalRead
 
-uint8_t interruptPins[MaxRaias]; //opcao sem mux, ou seja, um pino digital para cada digitalRead
+uint8_t interruptPins[MaxRaias]; //opcao sem mux, ou seja, um pino digital para cada digitalWrite
 
 bool state[MaxRaias]; //o arduino deve enviar 1 quando estiver no estado de leitura, para o server ter ctz que pode mandar dado do app
 //o app deve habilitar a opcao de stop so dps que a serie for enviada, para evitar choque com o estado de leitura
